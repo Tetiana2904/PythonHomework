@@ -1,11 +1,8 @@
-num = int(input("4-значне число: "))
-
-a = num // 1000
-b = (num % 1000) // 100
-c = (num % 100) // 10
-d = num % 10
-
-print(a)
-print(b)
-print(c)
-print(d)
+num = int(input("5-значне число: "))
+a = num // 10000
+b = (num % 10000) // 1000
+c = (num % 1000) // 100
+d = (num % 100) // 10
+e = num % 10
+reversed_num = e*10000 + d*1000 + c*100 + b*10 + a
+print(reversed_num)
