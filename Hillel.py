@@ -1,15 +1,23 @@
-import random
+while True:
+    a = float(input("Перше число: "))
+    b = float(input("Друге число: "))
+    op = input("Дія (+, -, *, /): ")
 
-n = random.randint(3, 10)   
-lst = []
+    if op == "+":
+        print(a + b)
+    elif op == "-":
+        print(a - b)
+    elif op == "*":
+        print(a * b)
+    elif op == "/":
+        if b == 0:
+            print("На нуль не можна")
+        else:
+            print(a / b)
 
-for i in range(n):
-    lst.append(random.randint(10, 99))  
-
-if len(lst) >= 3:
-    new_lst = [lst[0], lst[2], lst[1]]
-else:
-    new_lst = lst
+    again = input("Продовжити? (yes/y): ")
+    if again.lower() not in ["yes", "y"]:
+        break
 
 
 
