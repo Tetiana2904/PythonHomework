@@ -1,21 +1,20 @@
+def move_zeros(lst):
+    new_list = []
+    count_zeros = 0
+    for i in lst:
+        if i == 0:
+            count_zeros += 1
+        else:
+            new_list.append(i)
+    for i in range(count_zeros):
+        new_list.append(0)
+    return new_list
 
 
 
 
 
 
-
-def split_list(lst):
-    if len(lst) == 0:
-        return [[], []]
-    mid = (len(lst) + 1) // 2
-    first = []
-    second = []
-    for i in range(mid):
-        first.append(lst[i])
-    for i in range(mid, len(lst)):
-        second.append(lst[i])
-    return [first, second]
 
 
 
