@@ -2,12 +2,7 @@
 
 
 
-def move_last(lst):
-    if len(lst) == 0 or len(lst) == 1:
-        return lst
-    new_list = [lst[-1]]
-    for i in range(len(lst)-1):
-        new_list.appen
+
 
 
 def split_list(lst):
