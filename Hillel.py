@@ -2,7 +2,7 @@ while True:
     a = float(input("Перше число: "))
     b = float(input("Друге число: "))
     op = input("Дія (+, -, *, /): ")
-
+ 
     if op == "+":
         print(a + b)
     elif op == "-":
