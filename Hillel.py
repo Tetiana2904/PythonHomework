@@ -1,6 +1,6 @@
 import random
 
-n = random.randint(4, 8)   
+n = random.randint(3, 10)   
 lst = []
 
 for i in range(n):
