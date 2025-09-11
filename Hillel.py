@@ -1,18 +1,4 @@
-a = float(input("перше число: "))
-b = float(input("друге число: "))
-op = input("Що зробити?(+, -, *, /): ")
 
-if op == "+":
-    print("Результат =", a + b)
-elif op == "-":
-    print("Результат =", a - b)
-elif op == "*":
-    print("Результат =", a * b)
-elif op == "/":
-    if b == 0:
-        print("Не ділиться")
-    else:
-        print("Результат =", a / b)
 
 
 
@@ -35,5 +21,7 @@ def split_list(lst):
     for i in range(mid, len(lst)):
         second.append(lst[i])
     return [first, second]
+
+
 
 
