@@ -1,15 +1,10 @@
-def move_zeros(lst):
-    new_list = []
-    count_zeros = 0
-    for i in lst:
-        if i == 0:
-            count_zeros += 1
-        else:
-            new_list.append(i)
-    for i in range(count_zeros):
-        new_list.append(0)
-    return new_list
-
+def sum_even_indexes(lst):
+    if len(lst) == 0:
+        return 0
+    total = 0
+    for i in range(0, len(lst), 2):
+        total += lst[i]
+    return total * lst[-1]
 
 
 
